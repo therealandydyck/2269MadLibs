@@ -16,7 +16,7 @@ export default function Page() {
 
     return (
         <View style={Styles.page}>
-            <Text>how to play Mad Libs Hall Pass</Text>
+            <Text style={Styles.text}>how to play Mad Libs Hall Pass</Text>
             <TextInput
                 style={Styles.input}
                 onChangeText={onChangeName}
@@ -43,7 +43,7 @@ export default function Page() {
                 }} asChild
             >
                 <Pressable>
-                    <Text>Make my hall pass</Text>
+                    <Text style={Styles.text}>Make my hall pass</Text>
                 </Pressable>
             </Link>
             <Link
@@ -53,7 +53,7 @@ export default function Page() {
                 }} asChild
             >
                 <Pressable>
-                    <Text>Clear</Text>
+                    <Text style={Styles.text}>Clear</Text>
                 </Pressable>
             </Link>
         </View>
