@@ -53,7 +53,7 @@ export default function Page() {
                     <Text style={Styles.passText}><Text style={Styles.pText}>{name}</Text> : is too cool</Text>
                     <Text style={Styles.passText}>for <Text style={Styles.pText}>{noun}</Text> class.</Text>
                     <Text style={Styles.passText}>Instead, he/she/they will be </Text>
-                    <Text style={Styles.passText}>attending the <Text style={Styles.pText}>{anEvent}</Text></Text>
+                    <Text style={Styles.passText}>attending the <Text style={Styles.pText}>{anEvent}</Text>.</Text>
                     <View style={Styles.signBox}>
                         <Text style={Styles.passText}>SIGNED:</Text>
                     </View>

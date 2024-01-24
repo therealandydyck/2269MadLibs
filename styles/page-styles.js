@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: 'bold',
         marginBottom: 20,
+        width: '86%',
     },
     backButton: {
         justifyContent: 'flex-start',
@@ -70,6 +71,7 @@ const styles = StyleSheet.create({
     },
     cardMain : {
         transform: [{translateX: 90}, {translateY: -180}],
+        
         
     },
     signBox: {
