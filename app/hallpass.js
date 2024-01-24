@@ -50,8 +50,8 @@ export default function Page() {
                 <View style={Styles.cardMain}>
                     <Text style={Styles.madText}>MaD LiBs</Text>
                     <Text style={Styles.passText}>DATE:{getDate()}</Text>
-                    <Text style={Styles.passText}><Text style={Styles.pText}>{name}</Text> : is too cool</Text>
-                    <Text style={Styles.passText}>for <Text style={Styles.pText}>{noun}</Text> class.</Text>
+                    <Text style={Styles.passText}><Text style={Styles.pText}>{name}</Text> : is too cool for</Text>
+                    <Text style={Styles.passText}><Text style={Styles.pText}>{noun}</Text> class.</Text>
                     <Text style={Styles.passText}>Instead, he/she/they will be </Text>
                     <Text style={Styles.passText}>attending the <Text style={Styles.pText}>{anEvent}</Text>.</Text>
                     <View style={Styles.signBox}>
