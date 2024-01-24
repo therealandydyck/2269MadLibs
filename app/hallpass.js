@@ -32,23 +32,25 @@ export default function Page() {
                     }} asChild
                 >
                     <Pressable>
-                        <Text >Back</Text>
+                        <Text style={Styles.text}>Back</Text>
                     </Pressable>
 
                 </Link> 
             </View>
             <View style={Styles.pageMain}>
-                <View style={Styles.rotatedText}>
-                    <Text>HALL PASS</Text>
+                <View style={Styles.rotatedContainer}>
+                    <Text style={Styles.rotatedText}>HALL PASS</Text>
                 </View>  
                 <View style={Styles.cardMain}>
-                    <Text style={Styles.passText}>MaD LiBs</Text>
+                    <Text style={Styles.madText}>MaD LiBs</Text>
                     <Text style={Styles.passText}>DATE:{getDate()}</Text>
                     <Text style={Styles.passText}>{name} : is too cool</Text>
                     <Text style={Styles.passText}>for {noun} class.</Text>
                     <Text style={Styles.passText}>Instead, he/she/they will be </Text>
                     <Text style={Styles.passText}>attending the {anEvent}</Text>
-                    <Text style={Styles.passText}>SIGNED: SIGNATURE BOX</Text>
+                    <View style={Styles.signBox}>
+                        <Text style={Styles.passText}>SIGNED:</Text>
+                    </View>
                 </View>
                 
             </View>

@@ -9,6 +9,7 @@ import {
 import { Link, useLocalSearchParams } from 'expo-router';
 import Styles from '../styles/page-styles';
 
+
 export default function Page() {
     const [name, onChangeName] = React.useState("");
     const [noun, onChangeNoun] = React.useState("");
@@ -16,7 +17,9 @@ export default function Page() {
 
     return (
         <View style={Styles.page}>
+            <View style={Styles.title}>
             <Text style={Styles.text}>how to play Mad Libs Hall Pass</Text>
+            </View>
             <TextInput
                 style={Styles.input}
                 onChangeText={onChangeName}
@@ -46,16 +49,14 @@ export default function Page() {
                     <Text style={Styles.text}>Make my hall pass</Text>
                 </Pressable>
             </Link>
-            <Link
-                style={Styles.button}
-                href={{
-                    pathname: "/",
-                }} asChild
-            >
-                <Pressable>
-                    <Text style={Styles.text}>Clear</Text>
-                </Pressable>
-            </Link>
+            <Pressable style={Styles.button} onPress={() => [
+                onChangeName(''),
+                onChangeNoun(''),
+                onChangeAnEvent('')
+            ]} >
+                <Text style={Styles.text}>Clear</Text>
+            </Pressable>
+            
         </View>
         )
 }

@@ -5,7 +5,11 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#fff',
         alignItems: 'center',
-        justifyContent: 'center',
+       
+    },
+    title:{
+        padding: 15,
+        marginTop: 100,
     },
     input: {
         width: '80%',
@@ -25,35 +29,54 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: 'bold',
     },
+    madText: {
+        fontSize: 40,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        marginRight: 170,
+        marginBottom: 30,
+    },
     passText: {
         fontSize: 24,
         fontWeight: 'bold',
-        marginTop: 20,
+        marginBottom: 20,
     },
     backButton: {
         justifyContent: 'flex-start',
         padding: 15,
-        marginTop:20,
-        width: '20%',
+        marginTop: 30,
+        
     },
     pageMain: {
         flex: 0.9,
-        flexDirection: 'row',
+        flexDirection: 'column',
+        
     },
     header: {
         flex: 0.11,
         width: '100%',
         backgroundColor: 'red',
     },
-    rotatedText: {
-        transform: [{rotate: '270deg'}],
-        justifyContent: 'flex-start',
-        flex: 0.1,
+    rotatedContainer: {
         
-
+        transform: [{translateX: -170}, {translateY: 400}],
+       
+    },
+    rotatedText: {
+       
+        transform: [{rotate: '270deg'}],
+        fontSize: 80,
+        marginTop: 1,
     },
     cardMain : {
-        justifyContent: 'flex-end',
+        transform: [{translateX: 90}, {translateY: -50}],
+        
+    },
+    signBox: {
+        borderStyle: 'solid',
+        borderWidth: 5,
+        maxWidth: '70%',
+        height: '25%',
     },
 });
 
