@@ -1,6 +1,7 @@
 // page2.js
 import {
     Pressable,
+    Image,
     Text,
     View,
 } from 'react-native';
@@ -38,16 +39,21 @@ export default function Page() {
                 </Link> 
             </View>
             <View style={Styles.pageMain}>
+                <Image 
+                    style={Styles.logo}
+                    source={require('../assets/madlibs.jpg')}
+                />
                 <View style={Styles.rotatedContainer}>
+                    
                     <Text style={Styles.rotatedText}>HALL PASS</Text>
                 </View>  
                 <View style={Styles.cardMain}>
                     <Text style={Styles.madText}>MaD LiBs</Text>
                     <Text style={Styles.passText}>DATE:{getDate()}</Text>
-                    <Text style={Styles.passText}>{name} : is too cool</Text>
-                    <Text style={Styles.passText}>for {noun} class.</Text>
+                    <Text style={Styles.passText}><Text style={Styles.pText}>{name}</Text> : is too cool</Text>
+                    <Text style={Styles.passText}>for <Text style={Styles.pText}>{noun}</Text> class.</Text>
                     <Text style={Styles.passText}>Instead, he/she/they will be </Text>
-                    <Text style={Styles.passText}>attending the {anEvent}</Text>
+                    <Text style={Styles.passText}>attending the <Text style={Styles.pText}>{anEvent}</Text></Text>
                     <View style={Styles.signBox}>
                         <Text style={Styles.passText}>SIGNED:</Text>
                     </View>

@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         padding: 15,
     },
     text: {
-        fontSize: 24,
+        fontSize: 20,
         fontWeight: 'bold',
     },
     madText: {
@@ -58,8 +58,8 @@ const styles = StyleSheet.create({
         backgroundColor: 'red',
     },
     rotatedContainer: {
-        
-        transform: [{translateX: -170}, {translateY: 400}],
+        flexDirection: 'column',
+        transform: [{translateX: -170}, {translateY: 300}],
        
     },
     rotatedText: {
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
         marginTop: 1,
     },
     cardMain : {
-        transform: [{translateX: 90}, {translateY: -50}],
+        transform: [{translateX: 90}, {translateY: -180}],
         
     },
     signBox: {
@@ -77,6 +77,16 @@ const styles = StyleSheet.create({
         borderWidth: 5,
         maxWidth: '70%',
         height: '25%',
+        marginTop: 50,
+    },
+    logo: {
+        transform: [{translateX: -170}],
+        marginLeft: 170,
+        width: 110,
+        height: 110,
+    },
+    pText: {
+        color: 'blue',
     },
 });
 
