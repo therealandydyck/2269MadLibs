@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     },
     title:{
         padding: 15,
-        marginTop: 100,
+        marginTop: '15%',
     },
     input: {
         width: '80%',
@@ -33,8 +33,10 @@ const styles = StyleSheet.create({
         fontSize: 40,
         fontWeight: 'bold',
         textAlign: 'center',
-        marginRight: 170,
+        margin: 'auto',
+        marginRight: 100,
         marginBottom: 30,
+        paddingTop: '10%',
     },
     passText: {
         fontSize: 24,
@@ -45,7 +47,7 @@ const styles = StyleSheet.create({
     backButton: {
         justifyContent: 'flex-start',
         padding: 15,
-        marginTop: 30,
+        paddingTop: 30,
         
     },
     pageMain: {
@@ -60,19 +62,16 @@ const styles = StyleSheet.create({
     },
     rotatedContainer: {
         flexDirection: 'column',
-        transform: [{translateX: -170}, {translateY: 300}],
+        transform: [{translateX: -170}, {translateY: 200}],
        
     },
-    rotatedText: {
-       
+    rotatedText: {   
         transform: [{rotate: '270deg'}],
-        fontSize: 80,
+        fontSize: 70,
         marginTop: 1,
     },
     cardMain : {
-        transform: [{translateX: 90}, {translateY: -180}],
-        
-        
+        transform: [{translateX: 60}, {translateY: -180}],
     },
     signBox: {
         borderStyle: 'solid',
@@ -82,10 +81,9 @@ const styles = StyleSheet.create({
         marginTop: 50,
     },
     logo: {
-        transform: [{translateX: -170}],
-        marginLeft: 170,
-        width: 110,
-        height: 110,
+        transform: [{translateX: -20}],
+        width: 75,
+        height: 75,
     },
     pText: {
         color: 'blue',
