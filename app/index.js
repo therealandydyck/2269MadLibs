@@ -41,7 +41,7 @@ export default function Page() {
             <Link
                 style={Styles.button}
                 href={{
-                    pathname: "/hallpass",
+                    pathname: "/hallpass",              // Links to the hallpass.js passing the params
                     params: { name, noun, anEvent }
                 }} asChild
             >
@@ -49,7 +49,7 @@ export default function Page() {
                     <Text style={Styles.text}>Make my hall pass</Text>
                 </Pressable>
             </Link>
-            <Pressable style={Styles.button} onPress={() => [
+            <Pressable style={Styles.button} onPress={() => [       // Calls the useState() functions defined at the top to set the TextInputs to a blank state
                 onChangeName(''),
                 onChangeNoun(''),
                 onChangeAnEvent('')
